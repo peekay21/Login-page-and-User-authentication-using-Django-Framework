@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<title></title>
+<head>
+</head>
+<body>
+     <p>
+          Wel come {{login_user}}, <br>
+                    Your Inside the login page . Your email address is 
+     </p>
+     <div>
+     <form method ="POST" action ="/handlelogout/">
+     {% csrf_token %}
+     <input type ="submit" name="logout" value="logout">
+     </form>
+     </div>
+</body>
+</html>

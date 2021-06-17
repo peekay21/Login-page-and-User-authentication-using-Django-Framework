@@ -4,5 +4,5 @@ from login_app import views
 urlpatterns = [
     path('',views.loginpage, name='loginpage'),
     path('loginauth/',views.loginauth, name='loginauth'),
-    path('logout/', views.logout, name='logout'),
+    path('handlelogout/', views.handlelogout, name='handlelogout'),
 ]
